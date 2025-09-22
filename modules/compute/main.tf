@@ -16,7 +16,7 @@ variable "vm_size" {
 
 variable "subnet_id" {
   type    = string
-  default = "/subscriptions/15cb3ee3-c143-4893-83fd-09a6efa7b01f/resourceGroups/rg-cirrus-standard-01/providers/Microsoft.Network/virtualNetworks/vNet-cs-graduates-2025-57362353-cirrus-standard-01/subnets/sNet-cirrus-std-02"
+  default = "<subscription_id>"
 }
 
 variable "admin_username" {
@@ -66,7 +66,7 @@ resource "azurerm_windows_virtual_machine" "vm" {
     storage_account_type = var.os_disk_type
   }
 
-  source_image_id = "/subscriptions/92da1ef1-5469-4659-88df-e91ab8b5c0e0/resourceGroups/shared-images-rg/providers/Microsoft.Compute/galleries/amdocs_os_images/images/Windows2022/versions/1.0.052023"
+  source_image_id = "<os_image>"
 
   enable_automatic_updates = true
   patch_mode               = "AutomaticByOS"
