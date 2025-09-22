@@ -1,3 +1,1 @@
 Timestamp,VM Name,Environment,Resource Group,Owner,Tag,Action
-2025-09-17 10:55:48,dhiraj-vm,Windows,rg-cirrus-standard-01,Dhiraj Shinde,Dev,Created
-2025-09-17 10:58:37,dhiraj-vm,Windows,rg-cirrus-standard-01,Dhiraj Shinde,Dev,Destroyed
